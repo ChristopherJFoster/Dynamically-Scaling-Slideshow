@@ -1,0 +1,27 @@
+body {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.picture-box {
+  border: 2px dashed teal;
+  border-radius: 10px;
+  background-color: lemonchiffon;
+  position: relative;
+  width: 98%;
+  margin: 1% auto;
+  overflow: hidden;
+}
+.picture-box:before {
+  content: "";
+  display: block;
+  padding-top: 150%;
+}
+img {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%;
+  width: 100%;
+  height: auto;
+}
