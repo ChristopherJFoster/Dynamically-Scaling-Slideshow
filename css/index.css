@@ -6,12 +6,13 @@ body {
   border: 3px solid black;
   border-radius: 10px;
   position: relative;
-  width: 98%;
+  width: 97%;
+  height: auto;
   margin: 1% auto;
   overflow: hidden;
 }
 .picture-box:before {
-  content: "";
+  content: '';
   display: block;
   padding-top: 150%;
 }

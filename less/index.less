@@ -1,4 +1,4 @@
-// Git BASH: $ less-watch-compiler less css <name of main LESS file>
+// Git BASH: $ less-watch-compiler less css index.less
 
 // Utility variables
 @rtb: 2px dashed red;
@@ -13,16 +13,17 @@ body {
   border-radius: 10px;
   position: relative;
   // Desired width of picture box:
-  width: 98%;
+  width: 97%;
+  height: auto;
   margin: 1% auto;
   // Hides the parts of the slides that have slid out of frame or are not yet in frame:
   overflow: hidden;
 }
 
-// I'm not sure what exactly the ":before" pseudoclass is doing:
+// I'm not sure what exactly the ':before' pseudoclass is doing:
 .picture-box:before {
-  // Nor do I understand what "content: "";" is doing:
-  content: "";
+  // Nor do I understand what "content: ''" is doing:
+  content: '';
   display: block;
   // Aspect ratio 2:3. For best results, the picture box and all images should share the same aspect ratio.
   padding-top: 150%;
@@ -36,7 +37,7 @@ body {
 img {
   // Allows images to be "stacked" and to be slid into frame using animation:
   position: absolute;
-  // The images will not appear properly without either "top: 0%" or "bottom: 0%". I suspect the fact that it's top and bottom is related to paddinng-top being used above.
+  // The images will not appear properly without either "top: 0%" or "bottom: 0%". I suspect the fact that it's top and bottom is related to padding-top being used above.
   top: 0%;
   // The following tells the images to fill the picture box. Setting this to 50% is a good way to see how the slideshow animation works.
   width: 100%;
